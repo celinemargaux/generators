@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	
+	h1= title
+	p Welcome to #{title}
+	//label(for="num") Number Of Nations (max. 10):
+	//input#num(type="number", name="numberOfNations", min="1", max="10")
+	input#eventButton(type="button", value="Add Event")
+	p Events:
+	div.container
+	script(type='text/javascript' src='../javascripts/events.js')
